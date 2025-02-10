@@ -1,0 +1,13 @@
+# Ignore results directory containing large matrix operation outputs
+results/*
+!results/.gitkeep
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store

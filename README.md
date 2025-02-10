@@ -76,9 +76,28 @@ const matrix2 = loadMatrixFromFile('matrix2.txt');
 const sum = matrix1.add(matrix2);
 const product = matrix1.multiply(matrix2);
 
-// Display results
+// Results are automatically saved to the results directory
+// View results
 console.log(sum.toString());
 console.log(product.toString());
+```
+
+### Operation Results
+
+All matrix operation results are automatically saved to separate files in the `results` directory:
+
+- `results/addition_result.txt`: Contains the result of matrix addition operations
+- `results/subtraction_result.txt`: Contains the result of matrix subtraction operations
+- `results/multiplication_result.txt`: Contains the result of matrix multiplication operations
+- `results/transpose_result.txt`: Contains the result of matrix transpose operations
+
+Each result file follows the same format as input files:
+```
+rows=<number_of_rows>
+cols=<number_of_columns>
+(row_index, column_index, value)
+(row_index, column_index, value)
+...
 ```
 
 ## Implementation Details
